@@ -7,4 +7,36 @@
     font-family: 'Montserrat', sans-serif;
     max-width: 1440px;
   }
+  ::-webkit-scrollbar {
+    /* width: 0px; */
+    height: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 100px;
+  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e6e6e6;
+    border-radius: 100px;
+    border:3px #fff solid;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4EB7F2;
+  }
+
+  .select-custom {
+    background: url(/icon/arrow.svg);
+    background-size: 24px;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position:90% 50%;
+  }
 }
+
