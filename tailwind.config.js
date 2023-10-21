@@ -9,7 +9,10 @@ export default {
       colors: {
         'primary-blue': '#4EB7F2',
         'dark-blue': '#064061'
-      }
+      },
+      screens: {
+        'lg': '1100px',
+      },
     },
   },
   plugins: [],
