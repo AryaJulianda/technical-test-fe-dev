@@ -1,8 +1,59 @@
-# React + Vite
+<h3 align="center">Technical Test - Front End Developer</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- ABOUT THE PROJECT -->
 
-Currently, two official plugins are available:
+## 🔖 Build With
+This app was built with some technologies below:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite
+- React JS
+- Node JS
+- Tailwind CSS
+- Axios
+- Mirage JS
+
+## 🔥 Getting Started
+
+### Prerequisites
+
+Before going to the installation stage there are some software that must be installed first.
+
+- [NodeJs](https://nodejs.org/en/download/)
+
+
+## 💻 How To Install?
+
+- Clone the repo
+
+```
+git clone https://github.com/AryaJulianda/technical-test-fe-dev.git
+```
+
+- Go To Folder Repo
+
+```
+cd technical-test-fe-dev
+```
+
+- Install Module
+
+```
+npm install
+```
+
+- Type ` npm run dev` To Start Website
+- Type ` npm run build` To Start Production
+
+### 🤖 Author
+
+* **Arya Julianda**
+
+* Github: [@AryaJulianda](https://github.com/AryaJulianda)
+* LinkedIn: [@Arya Julianda](https://www.linkedin.com/in/aryajulianda)
+
+### Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+Made by ❤️ 
