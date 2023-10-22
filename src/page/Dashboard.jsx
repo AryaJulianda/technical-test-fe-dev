@@ -11,13 +11,12 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    makeServer()
+    makeServer();
 
     const fetchData = async () => {
       try {
         const response = await Axios.get('/api/dashboard');
         setData(response.data);
-        console.log({'inires':response.data})
         setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -28,27 +27,16 @@ const Dashboard = () => {
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  //   // Log `data` ketika nilainya diperbarui.
-  //   console.log({ 'inidata':data });
-  // }, [data]);
-
   return (
-    <div className="flex flex-row w-full min-h-screen py-10 pr-6 bg-[#F7F9FA] gap-8 // max-xl:gap-6 max-xl:py-6 max-xl:pr-4 // max-lg:gap-4 max-lg:py-4 max-lg:pr-3">
-
-      <Sidebar/>
-
-      {/* Center */}
-      <div className="w-[40%] flex flex-col gap-5 // max-xl:gap-4 // max-lg:gap-3">
-        <AllExpenses data={data.allExpenses} />
-        <Invoice />
+    <div className="flex flex-row w-full min-h-screen py-10 pr-6 bg-[#F7F9FA] gap-8 max-xl:gap-6 max-xl:py-6 max-xl:pr-4 max-lg:gap-4 max-lg:py-4 max-lg:pr-3">
+      <Sidebar />
+      <div className="w-[40%] flex flex-col gap-5 max-xl:gap-4 max-lg:gap-3">
+        <AllExpenses data={data.allExpenses} loading={loading} />
+        <Invoice loading={loading} />
       </div>
-
-      {/* My Card */}
-      <MyCard data={data.myCard}/>
-
+      <MyCard data={data.myCard} loading={loading} />
     </div>
-  )
+  );
 };
 
 export default Dashboard;

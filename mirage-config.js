@@ -1,4 +1,4 @@
-import { createServer, Model, Factory } from 'miragejs';
+import { createServer } from 'miragejs';
 
 export function makeServer() {
   const server = createServer({
@@ -29,8 +29,9 @@ export function makeServer() {
                   name: 'Jeffry Nichol',
                   number:'0918 8124 0042 8129',
                   exp: '11/25 - 124',
-                  history_month:'October 2023',
-                  history: [
+                  current_month:'October',
+                  current_year:'2023',
+                  history_monthly: [
                     {
                       category:'expenses',
                       description: 'Car Installments',
@@ -49,8 +50,9 @@ export function makeServer() {
                   name: 'Jeffry Nichol',
                   number:'8343 0918 0654 8143',
                   exp: '10/24 - 124',
-                  history_month:'October 2023',
-                  history: [
+                  current_month:'October',
+                  current_year:'2023',
+                  history_monthly: [
                     {
                       category:'income',
                       description: 'Freelance Project',
@@ -63,12 +65,13 @@ export function makeServer() {
                   name: 'Jeffry Nichol',
                   number:'3424 8453 3235 3570',
                   exp: '3/27 - 124',
-                  history_month:'October 2023',
-                  history: []
+                  current_month:'October',
+                  current_year:'2023',
+                  history_monthly: [],
                 }
               ],    
             });
-          }, 5000); // Penundaan 5 detik
+          }, 5000);
         });
       });
     },
