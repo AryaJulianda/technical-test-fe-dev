@@ -25,16 +25,20 @@ const Invoice = ({ loading }) => {
             <div key={index} className="flex flex-col gap-3 max-lg:gap-2">
               <h5 className="text-base text-dark-blue font-medium max-lg:text-sm">{label}</h5>
               {label === "Item Amount" ? (
-                <select className="bg-[#f0f0f0] p-5 rounded-xl outline-primary-blue select-custom cursor-pointer max-xl:p-4 max-lg:p-3 max-lg:text-sm">
-                  <option value="USD">USD</option>
-                </select>
+                <div className="flex flex-row gap-1 bg-[#f0f0f0] p-5 rounded-xl outline-primary-blue cursor-pointer max-xl:p-4 max-lg:p-3 max-lg:text-sm">  
+                  <select className="bg-transparent outline-none">
+                    <option value="USD">USD</option>
+                    <option value="IDR">IDR</option>
+                  </select>
+                  <input type="number" placeholder="Amount" className="w-full bg-transparent outline-none cursor-pointer max-lg:text-sm"/>
+                </div>
               ) : (
                 <input type="text" className="bg-[#f0f0f0] p-5 rounded-xl outline-primary-blue max-xl:p-4 max-lg:p-3 max-lg:text-sm" placeholder={`Type ${label.toLowerCase()}`} />
               )}
             </div>
           ))}
           <button className="text-lg font-semibold text-primary-blue py-5 max-lg:text-base">Add More Detail</button>
-          <button className="text-lg font-semibold text-white bg-primary-blue py-5 rounded-xl max-lg:text-base">Add More Detail</button>
+          <button className="text-lg font-semibold text-white bg-primary-blue py-5 rounded-xl max-lg:text-base">Send Money</button>
         </div>
       </div>
     </div>

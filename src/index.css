@@ -37,5 +37,15 @@
     background-repeat: no-repeat;
     background-position:90% 50%;
   }
+
+  input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* != Firefox */
+    -webkit-appearance: none; /* Chrome, Safari */
+  }
+
+  input[type="number"]:hover {
+    cursor: text;
+  }
 }
 
